@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSE479 Lab 3 - Forms</title>
+</head>
+
+<body>
+    <!-- Form 1 -->
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td colspan="2" style="text-align: start;">
+                        <h1>Registartion Form</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="userid">User Id:</label>
+                    </td>
+                    <td>
+                        <input name="userid" type="text" value="" required maxlength="12" minlength="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password:</label>
+                    </td>
+                    <td>
+                        <input name="pass" type="password" value="" required maxlength="12" minlength="7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input name="name" type="text" value="" required pattern="[A-Za-z]">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="addr">Address:</label>
+                    </td>
+                    <td>
+                        <input name="add" type="text" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cont">Country:</label>
+                    </td>
+                    <td>
+                        <select name="cont" id="cont" required>
+                            <option value="">(Please select a country)</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
+                        </select </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="zip">Zip Code:</label>
+                    </td>
+                    <td>
+                        <input name="zip" type="number" value="" pattern="[0-9]">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input name="email" type="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sex">Sex:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="male" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="female" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lang">Language:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="eng" name="eng" value="English" checked>
+                        <label for="eng">English</label>
+                        <input type="checkbox" id="noeng" name="noeng" value="No English">
+                        <label for="noeng">No English</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="about">About:</label>
+                    </td>
+                    <td rowspan="5">
+                        <textarea name="about" id="about" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">
+                        &nbsp;
+                    </td>
+                </tr>
+                <!-- <tr aria-colspan="2">
+                    <td>
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr> -->
+            </table>
+
+        </form>
+    </div>
+
+    <!-- table 2 -->
+    <div style="margin-top: 50px;">
+        <form action="">
+            <table style="padding-left: 0; padding-right: 0; background-color: black;">
+                <tr bgcolor="#E66C1A">
+                    <td colspan="2" style="text-align: start;">
+                        Sign Up
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="userid" style="color: #E6BD1A;">First Name:</label>
+                    </td>
+                    <td>
+                        <input name="userid" type="text" value="" required maxlength="12" minlength="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass" style="color: #E6BD1A;">Last Name:</label>
+                    </td>
+                    <td>
+                        <input name="pass" type="password" value="" required maxlength="12" minlength="7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name" style="color: #E6BD1A;">Screen Name:</label>
+                    </td>
+                    <td>
+                        <input name="name" type="text" value="" required pattern="[A-Za-z]">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cont" style="color: #E6BD1A;">Date of Birth:</label>
+                    </td>
+                    <td>
+                        <select name="cont" id="cont" required>
+                            <option value="">Month</option>
+                            <option value="Bangladesh" selected>May</option>
+                            <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
+                        </select>
+                        <select name="cont" id="cont" required>
+                            <option value="">Month</option>
+                            <option value="Bangladesh" selected>5</option>
+                            <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
+                        </select>
+                        <select name="cont" id="cont" required>
+                            <option value="">Month</option>
+                            <option value="Bangladesh" selected>1985</option>
+                            <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sex" style="color: #E6BD1A;">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="male" value="Male">
+                        <label for="male" style="color: #E6BD1A;">Male</label>
+                        <input type="radio" id="female" name="female" value="Female">
+                        <label for="female" style="color: #E6BD1A;">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cont" style="color: #E6BD1A;">Country:</label>
+                    </td>
+                    <td>
+                        <select name="cont" id="cont" required>
+                            <option value="">(Please select a country)</option>
+                            <option value="Bangladesh" selected>USA</option>
+                            <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
+                        </select </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email" style="color: #E6BD1A;">Email:</label>
+                    </td>
+                    <td>
+                        <input name="email" type="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="zip" style="color: #E6BD1A;">Phone:</label>
+                    </td>
+                    <td>
+                        <input name="zip" type="number" value="" pattern="[0-9]">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="zip" style="color: #E6BD1A;">Password:</label>
+                    </td>
+                    <td>
+                        <input name="zip" type="password" value="" pattern="[0-9]">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="zip" style="color: #E6BD1A;">Confirm Password:</label>
+                    </td>
+                    <td>
+                        <input name="zip" type="password" value="" pattern="[0-9]">
+                    </td>
+                </tr>
+
+
+                <!-- <tr>
+                    <td>
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr> -->
+            </table>
+
+        </form>
+    </div>
+    <!-- ----------- -->
+    <!-- Third form ---->
+    <!-- ------------ -->
+    <div class="form_body">
+        <form action="">
+            <table class="third_table" cellpadding="10" cellspacing="0">
+                <tr style="background-color: #a6d1c0">
+                    <td>
+                        <h1>Workshop Registration</h1>
+                    </td>
+                    <td>More Actions <span>&#8681;</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr align="left">
+                                <td colspan="2" ;>
+                                    <a href="#" style="color: black">Register now while seats are available!</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">First Name*</label></td>
+                                <td><input type="text" name="" id="" required /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Last Name *</label></td>
+                                <td><input type="text" name="" id="" required /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Company/Institution *</label></td>
+                                <td><input type="text" name="" id="" required /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Address *</label></td>
+                                <td>
+                                    <textarea style="height: 100px; width: 170px" id=""></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">City</label></td>
+                                <td><input type="text" name="" id="" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">State/Provinance/Region</label></td>
+                                <td>
+                                    <select style="width: 177px" name="" id="">
+                                        <option value="">-Select</option>
+                                        <option value="Dhk">Dhaka</option>
+                                        <option value="Syl">Sylhet</option>
+                                        <option value="Ctg">Chittagong</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Country</label></td>
+                                <td>
+                                    <select style="width: 177px" name="" id="">
+                                        <option value="">-Select</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="ENG">England</option>
+                                        <option value="ARG">Argentina</option>
+                                        <option value="BraZil">Brazil</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Email *</label></td>
+                                <td><input type="text" name="" id="" required /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Phone *</label></td>
+                                <td>
+                                    <input type="text" pattern="[0-9]+" name="" id="" required />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr align="left">
+                                <td colspan="2" ;>
+                                    <p style="color: black"><u>Lunch</u></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Meal Preference</label></td>
+                                <td>
+                                    <select style="width: 177px" name="" id="">
+                                        <option value="">-Select</option>
+                                        <option value="Veg">Vegitarian</option>
+                                        <option value="nVeg">Non Vegitarian</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr align="left">
+                                <td colspan="2" ;>
+                                    <p style="color: black"><u>Payment Details</u></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Payment Mode</label></td>
+                                <td><input type="checkbox" name="Checkbox" id="" /> Cash</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" name="Checkbox" id="" /> Checque
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" name="Checkbox" id="" /> Demand Draft
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">DD/Cheque No. </label></td>
+                                <td><input type="text" pattern="[0-9]+" name="" id="" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Drawn On (Bank Name) </label></td>
+                                <td><input type="text" name="" id="" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Payable at </label></td>
+                                <td><input type="text" name="" id="" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background-color: #eaeaea">
+                    <td colspan="3" align="center">
+                        <input style="
+                      background-color: #7cac9c; /* Green */
+                      border: none;
+                      color: white;
+                      padding: 10px 14px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 14px;
+                    " type="Submit" />
+                        <input style="
+                      background-color: #7cac9c; /* Green */
+                      border: none;
+                      color: white;
+                      padding: 10px 14px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 14px;
+                    " type="reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- ----------- -->
+    <!-- Fourth form -->
+    <!-- ----------- -->
+
+    <div class="form_body">
+        <div>
+            <h1 style="background-color: white; color: #6a5acd; text-align: center">
+                <u>Student Registration Form</u>
+            </h1>
+            <form action="" style="background-color: #6a5acd; width: fit-content">
+                <table style="margin: 0 auto auto 0" class="fourth_table">
+                    <tr>
+                        <td><label for="">First Name</label></td>
+                        <td>
+                            <input type="text" maxlength="30" pattern="[A-Za-z]+" name="" id="" />
+                            (Max 30 characters a-z and A-Z)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Last Name</label></td>
+                        <td>
+                            <input type="text" maxlength="30" pattern="[A-Za-z]+" name="" id="" />
+                            (Max 30 characters a-z and A-Z)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Date of Birth</label></td>
+                        <td>
+                            <select>
+                                <option>Date</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <select>
+                                <option>Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                            <select>
+                                <option>Year</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Email ID</label></td>
+                        <td><input type="text" name="" id="" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Mobile Number</label></td>
+                        <td>
+                            <input type="text" name="" id="" required /> (10 Digit Number)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" />Male
+                            <input type="radio" name="gender" />Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Address</label></td>
+                        <td>
+                            <textarea style="height: 80px; width: 200px" id=""></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">City</label></td>
+                        <td>
+                            <input type="text" maxlength="30" pattern="[A-Za-z]+" name="" id="" />
+                            (Max 30 characters a-z and A-Z)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Pin Code</label></td>
+                        <td>
+                            <input type="text" maxlength="6" pattern="[0-9]{6}" name="" id="" />
+                            (6 Digit Character)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Country</label></td>
+                        <td>
+                            <input type="text" maxlength="30" pattern="[A-Za-z]+" name="" id="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Hobbies</label></td>
+                        <td>
+                            Drawing <input type="checkbox" name="Checkbox" id="" /> Singing
+                            <input type="checkbox" name="Checkbox" id="" /> Dancing
+                            <input type="checkbox" name="Checkbox" id="" /> Sketching
+                            <input type="checkbox" name="Checkbox" id="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Others <input type="checkbox" name="Checkbox" id="" />
+                            <input type="text" name="" id="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Qualifications</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Sl.No.</th>
+                                    <th style="color: white">Examination</th>
+                                    <th style="color: white">Board</th>
+                                    <th style="color: white">Percentage</th>
+                                    <th style="color: white">Year of Passing</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Class X</td>
+                                    <td><input type="text" name="" id="" /></td>
+                                    <td><input type="text" name="" id="" /></td>
+                                    <td><input type="text" name="" id="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Class XIII</td>
+                                    <td><input type="text" name="" id="" /></td>
+                                    <td><input type="text" name="" id="" /></td>
+                                    <td><input type="text" name="" id="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Graduations</td>
+                                    <td><input type="text" name="" id="" /></td>
+                                    <td><input type="text" name="" id="" /></td>
+                                    <td><input type="text" name="" id="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Masters</td>
+                                    <td><input type="text" name="" id="" /></td>
+                                    <td><input type="text" name="" id="" /></td>
+                                    <td><input type="text" name="" id="" /></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td align="center">(10 Char Max)</td>
+                                    <td align="center">(Upto 2 Decimal)</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            BCA <input type="radio" name="" id="" />B.Com
+                            <input type="radio" name="" id="" />B.Sc
+                            <input type="radio" name="" id="" />B.A
+                            <input type="radio" name="" id="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" style="
+                        padding: 10px 14px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 10px;
+                        border-radius: 7px;
+                      " value="submit" />
+                            <input type="Reset" style="
+                        padding: 10px 14px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 10px;
+                        border-radius: 7px;
+                      " value="Cancel" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

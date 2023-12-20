@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE479 - Lab 2</title>
+</head>
+
+<body>
+  <style>
+    .h11 {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
+
+    .acenter {
+      text-align: center;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .bcolor {
+      background-color: #ffff00;
+    }
+
+    .t7 {
+      border: none;
+    }
+  </style>
+
+  <!-- Table 1 -->
+  <div>
+    <p class="acenter">i</p>
+    <h1 class="acenter h11">Data List</h1>
+
+    <table>
+      <tr>
+        <th rowspan="2">About</th>
+        <th colspan="2">Average</th>
+        <th rowspan="2">Red eyes</th>
+      </tr>
+      <tr>
+        <th>height</th>
+        <th>weight</th>
+      </tr>
+      <tr>
+        <th>Males</th>
+        <td>1.9</td>
+        <td>0.003</td>
+        <td rowspan="2">40%</td>
+      </tr>
+      <tr>
+        <th>Females</th>
+        <td>1.7</td>
+        <td>0.002</td>
+      </tr>
+      <tr>
+        <th>Others</th>
+        <td>1.5</td>
+        <td>0.00002</td>
+        <td>0.0001%</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 2 -->
+
+  <div>
+    <p class="acenter">ii</p>
+    <table class="bcolor">
+      <tr>
+        <th bgcolor="Red">Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Row 1 Cell 1</td>
+        <td>Row 1 Cell 2</td>
+        <td>Row 1 Cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <img src="pic1.jpg" alt="Mountain" width="300px" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 3 -->
+
+  <div>
+    <p class="acenter">iii</p>
+    <table class="acenter" style="
+          border-right: 3px solid black;
+          border-bottom: 3px solid black;
+          border-left: 3px solid #444444;
+          border-top: 3px solid #444444;
+        ">
+      <tr>
+        <td colspan="3" style="font-size: large">Top</td>
+      </tr>
+      <tr>
+        <td rowspan="2">way left</td>
+        <td>middle up</td>
+        <td rowspan="2">way right</td>
+      </tr>
+      <tr>
+        <td>middle down</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 4 -->
+  <div>
+    <p class="acenter">iv</p>
+    <table class="acenter" style="border: none; height: 200px; width: 200px">
+      <tr bgcolor="#006400" style="border: none">
+        <td style="border: none">
+          <table class="acenter" style="border: 2px solid white; height: 160px; width: 160px">
+            <tr bgcolor="Red" style="border: 2px solid white">
+              <td style="border: 1px solid white">
+                <table class="acenter" style="border: 2px solid white; height: 120px; width: 120px">
+                  <tr bgcolor="#ffff00" style="border: 2px solid white">
+                    <td style="border: 1px solid white">
+                      <table class="acenter" style="
+                            border: 2px solid white;
+                            height: 80px;
+                            width: 80px;
+                          ">
+                        <tr bgcolor="#0000FF" style="border: 2px solid white">
+                          <td style="border: 1px solid white">
+                            <table class="acenter" style="
+                                  border: 2px solid white;
+                                  height: 10px;
+                                  width: 10px;
+                                ">
+                              <tr bgcolor="white" style="border: 2px solid white">
+                                <td style="border: 1px solid white"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 5 -->
+  <div>
+    <p class="acenter">v</p>
+    <table style="
+          border: 2px solid black;
+          border-style: inset;
+          border-collapse: collapse;
+          width: 200px;
+        ">
+      <tr style="border: 2px solid black; border-style: outset">
+        <td style="border: 2px solid black; border-style: outset">data 1</td>
+        <td style="border: 2px solid black; border-style: outset">data 2</td>
+        <td style="border: 2px solid black; border-style: outset">data 3</td>
+      </tr>
+      <tr style="border: 2px solid black; border-style: outset">
+        <td style="border: 2px solid black; border-style: outset">data 1</td>
+        <td colspan="2">data 2</td>
+      </tr>
+      <tr style="border: 2px solid black; border-style: outset">
+        <td rowspan="2" style="border: 2px solid black; border-style: outset">
+          data 2
+        </td>
+        <td colspan="2" style="border: 2px solid black; border-style: outset">
+          data 2
+        </td>
+      </tr>
+      <tr style="
+            border: 2px solid black;
+            border-style: outset;
+            border-bottom: none;
+          ">
+        <td colspan="2" style="
+              border: 2px solid black;
+              border-style: outset;
+              border-bottom: none;
+            ">
+          data 1
+        </td>
+      </tr>
+      <tr style="
+            border: 2px solid black;
+            border-style: outset;
+            border-top: none;
+          ">
+        <td style="border: 2px solid black; border-style: outset">data 1</td>
+        <td colspan="2" style="
+              border: 2px solid black;
+              border-style: outset;
+              border-top: none;
+            ">
+          data 2
+        </td>
+      </tr>
+      <tr style="border: 2px solid black; border-style: outset">
+        <td colspan="3" style="border: 2px solid black; border-style: outset">
+          data 3<br />data 3
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 6 -->
+  <div>
+    <p class="acenter">vi</p>
+    <table>
+      <tr>
+        <td>1</td>
+        <td rowspan="2">2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 7 -->
+  <div>
+    <p class="acenter">vii</p>
+    <table class="t7">
+      <tr class="t7" bgcolor="#BADA55">
+        <th class="t7" colspan="6">
+          <h2><i>My tech stock picks</i></h4>
+        </th>
+      </tr>
+      <tr class="t7">
+        <th class="t7">NAME</th>
+        <th class="t7">SYMBOL</th>
+        <th class="t7">CURRENT</th>
+        <th class="t7">52WK HI</th>
+        <th class="t7">52WK LO</th>
+        <th class="t7">P/E RATIO</th>
+      </tr>
+      <tr class="t7" bgcolor="#BADA55">
+        <td class="t7">Microsoft</td>
+        <td class="t7">MSFT</td>
+        <td class="t7">86-3/8</td>
+        <td class="t7">119-15/16</td>
+        <td class="t7">75-1/2</td>
+        <td class="t7">56.09</td>
+      </tr>
+      <tr class="t7">
+        <td class="t7">Microsoft</td>
+        <td class="t7">MSFT</td>
+        <td class="t7">86-3/8</td>
+        <td class="t7">119-15/16</td>
+        <td class="t7">75-1/2</td>
+        <td class="t7">56.09</td>
+      </tr>
+      <tr class="t7" bgcolor="#BADA55">
+        <td class="t7">Microsoft</td>
+        <td class="t7">MSFT</td>
+        <td class="t7">86-3/8</td>
+        <td class="t7">119-15/16</td>
+        <td class="t7">75-1/2</td>
+        <td class="t7">56.09</td>
+      </tr>
+      <tr class="t7">
+        <td class="t7">Microsoft</td>
+        <td class="t7">MSFT</td>
+        <td class="t7">86-3/8</td>
+        <td class="t7">119-15/16</td>
+        <td class="t7">75-1/2</td>
+        <td class="t7">56.09</td>
+      </tr>
+      <tr class="t7" bgcolor="#BADA55">
+        <td class="t7">Microsoft</td>
+        <td class="t7">MSFT</td>
+        <td class="t7">86-3/8</td>
+        <td class="t7">119-15/16</td>
+        <td class="t7">75-1/2</td>
+        <td class="t7">56.09</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 8 -->
+  <div>
+    <p class="acenter">viii</p>
+    <table style="border: 5px solid blue;">
+      <tr>
+        <td style="border: 2px solid blue;">I am outer table</td>
+        <td style="border: 2px solid blue;">
+          <table style="border: 5px solid green;">
+            <tr>
+              <td style="border: 2px solid green;">I am the first row of first table</td>
+            </tr>
+            <tr>
+              <td style="border: 2px solid green;">I am the second row of first table</td>
+            </tr>
+            <tr>
+              <td style="border: 2px solid green;">I am the third row of first table</td>
+            </tr>
+            <tr>
+              <td style="border: 2px solid green;">I am the forth row of first table</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 9 -->
+  <div>
+    <p class="acenter">ix</p>
+    <p class="acenter">Invoice</p>
+    <table style="border-collapse: collapse; table-layout: fixed; width: 600px; height: 300px;">
+      <tr style="text-align: start; background-color: #e6e6e6;">
+        <th style="text-align: start;">Item/Desc.</th>
+        <th style="text-align: start;">Qty.</th>
+        <th style="text-align: start;">@</th>
+        <th style="text-align: start;">Price</th>
+      </tr>
+      <tr>
+        <td>Paperclips (Box)</td>
+        <td>100</td>
+        <td>1.15</td>
+        <td>115.00</td>
+      </tr>
+      <td>Paper (Case)</td>
+      <td>100</td>
+      <td>1.15</td>
+      <td>115.00</td>
+      </tr>
+      <td>Wastepaper<br>Baskets</td>
+      <td>100</td>
+      <td>1.15</td>
+      <td>115.00</td>
+      </tr>
+      <tr>
+        <td colspan="3" bgcolor="#e6e6e6">Subtotal</td>
+        <td>610.88</td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#e6e6e6">Tax</td>
+        <td>7%</td>
+        <td>42.76</td>
+      </tr>
+      <tr>
+        <td colspan="3" bgcolor="#e6e6e6">Total</td>
+        <td>653.64</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table 10 -->
+  <div>
+    <p class="acenter">x</p>
+    <table style="width: 80%; border-collapse: collapse; border: 1px solid white;">
+      <tr>
+        <td style="border: 1px solid white; background-color: #FFAE42; width: 30px;">&nbsp</td>
+        <td style="border: 1px solid white; text-align: center; background-color: orangered;">
+          <h1><i>East West University</i></h1>
+        </td>
+        <td style="width: 100px; border: 1px solid white; background-color: #FFAE42;"><img src="pic1.jpg" alt="Mountain" width="100px"></td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid white; background-color: #FFAE42;">&nbsp</td>
+        <td style="border: 1px solid white; background-color: #FFAE42;">
+          <table>
+            <tr>
+              <td><a href="#"><img src="home.png" alt=""></a></td>
+              <td><a href="#"><img src="info.png" alt=""></a></td>
+              <td><a href="#"><img src="cv.png" alt=""></a></td>
+              <td><a href="#"><img src="contact.png" alt=""></a></td>
+            </tr>
+          </table><br>
+          <h1>WHY EAST-WEST UNIVERSITY?</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque eveniet et, perferendis a eos quos voluptate ducimus ad officia quam suscipit error, dolores soluta illum velit vel quas, magni nemo eligendi? Quia voluptas consequuntur aliquid consequatur nesciunt molestias quaerat odit, blanditiis neque repellendus! Repellendus vero pariatur porro accusantium vel veniam nemo sequi sint, ullam veritatis nisi aspernatur culpa omnis, enim inventore doloremque esse deserunt rerum similique labore aliquid. Deleniti soluta sed inventore maxime quidem similique, minus doloremque iusto corrupti repellendus molestiae reprehenderit aliquam dolorem doloribus mollitia necessitatibus dignissimos fugit! Atque debitis perspiciatis, vel corporis nihil eos maxime dolor porro?</p>
+          <br><br>
+          <h1>Computer and Information Science</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque eveniet et, perferendis a eos quos voluptate
+            ducimus ad officia quam suscipit error, dolores soluta illum velit vel quas, magni nemo eligendi? Quia voluptas
+            consequuntur aliquid consequatur nesciunt molestias quaerat odit, blanditiis neque repellendus! Repellendus vero
+            pariatur porro accusantium vel veniam nemo sequi sint, ullam veritatis nisi aspernatur culpa omnis, enim inventore
+            doloremque esse deserunt rerum similique labore aliquid. Deleniti soluta sed inventore maxime quidem similique, minus
+            doloremque iusto corrupti repellendus molestiae reprehenderit aliquam dolorem doloribus mollitia necessitatibus
+            dignissimos fugit! Atque debitis perspiciatis, vel corporis nihil eos maxime dolor porro?</p>
+            <br><br>
+            <h1>Program Objectives</h1>
+            <br>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, molestiae.
+
+              </li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet!</li>
+            </ul>
+        </td>
+        <td style="border: 1px solid white; background-color: #FFAE42;">&nbsp</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid white; background-color: orangered; height: 40px; text-align: center;" colspan="3">
+          Copyright © East-West University, 2016. All Rights Reserved.
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
